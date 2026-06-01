@@ -58,15 +58,19 @@
 
 ### Entregas
 
-- [ ] `app/(app)/layout.tsx` — layout com sidebar fixa + área de conteúdo
-- [ ] `components/shared/Sidebar.tsx` — logo PipeFlow, nav links (Dashboard, Leads, Pipeline, Configurações) com ícones Lucide, `WorkspaceSwitcher` no topo, versão colapsável mobile via Sheet
-- [ ] `components/shared/Navbar.tsx` — barra superior com campo de busca global (UI), avatar do usuário + DropdownMenu (Perfil, Sair)
-- [ ] `components/shared/WorkspaceSwitcher.tsx` — dropdown mostrando workspace ativo + lista mock, botão "Criar workspace"
-- [ ] `app/(auth)/login/page.tsx` — form e-mail + senha, link "Criar conta", layout centralizado
-- [ ] `app/(auth)/register/page.tsx` — form nome, e-mail, senha, nome do workspace
-- [ ] `app/(auth)/invite/[token]/page.tsx` — página "Você foi convidado para [Workspace]", botão aceitar
-- [ ] `app/(auth)/layout.tsx` — layout simples sem sidebar, logo centrado
-- [ ] Shadcn: `Button`, `Input`, `Label`, `Card`, `DropdownMenu`, `Avatar`, `Sheet`, `Separator`
+- [x] `app/(app)/layout.tsx` — layout com sidebar fixa + área de conteúdo
+- [x] `components/shared/Sidebar.tsx` — logo PipeFlow, nav links (Dashboard, Leads, Pipeline, Configurações) com ícones Lucide, `WorkspaceSwitcher` no topo, versão colapsável mobile via CSS translate
+- [x] `components/shared/Navbar.tsx` — barra superior com campo de busca global (UI), avatar do usuário + UserMenu dropdown (Perfil, Sair)
+- [x] `components/shared/WorkspaceSwitcher.tsx` — dropdown mostrando workspace ativo + lista mock, botão "Criar workspace"
+- [x] `components/shared/AppShell.tsx` — client component gerenciando estado do drawer mobile; children permanecem Server Components
+- [x] `app/(auth)/login/page.tsx` — form e-mail + senha, link "Criar conta", layout centralizado
+- [x] `app/(auth)/register/page.tsx` — form nome, e-mail, senha, nome do workspace
+- [x] `app/(auth)/invite/[token]/page.tsx` — página "Você foi convidado para [Workspace]", botão aceitar
+- [x] `app/(auth)/layout.tsx` — layout simples sem sidebar, logo centrado
+- [x] Shadcn: `Input`, `Label`, `Card`, `Avatar`, `Separator`
+- [x] Dark mode como padrão: classe `dark` no `<html>`, paleta oklch com azul primário `oklch(0.62 0.22 262)`
+- [x] Páginas placeholder: `dashboard`, `leads`, `pipeline`, `settings`
+- [x] Verificação Playwright: navegação, active state, mobile drawer, dark mode ✅
 
 **Commit final:** `feat: add app shell layout, sidebar, navbar, and static auth pages`
 
