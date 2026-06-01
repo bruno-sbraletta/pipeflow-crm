@@ -76,6 +76,25 @@
 
 ---
 
+## M1.5 — Auth Interativo + Onboarding UI (aula 2.2)
+
+**Branch:** `feat/auth-onboarding-ui`
+
+**Objetivo:** Tornar os formulários de autenticação interativos e adicionar página de onboarding.
+
+### Entregas
+
+- [x] `app/(auth)/login/page.tsx` — validação client-side (e-mail obrigatório + formato, senha obrigatória), mensagens de erro inline, toggle show/hide de senha, loading spinner "Entrando...", redirect fake para `/dashboard`
+- [x] `app/(auth)/register/page.tsx` — validação (nome, e-mail, senha ≥ 8 chars), erros inline, toggle de senha, loading "Criando conta...", redirect para `/onboarding` (campo workspace movido para onboarding)
+- [x] `app/(auth)/onboarding/page.tsx` — barra de progresso (3 etapas), ícone Building2, campo "Nome do workspace" com `autoFocus`, hint de que pode alterar depois, loading "Criando workspace...", redirect para `/dashboard`
+- [x] Erros somem ao digitar no campo correspondente
+- [x] Botões desabilitados durante loading (`disabled:opacity-60`)
+- [x] Verificação Playwright headless: 15/15 passos passaram ✅
+
+**Commit final:** `feat: add interactive auth forms and onboarding page`
+
+---
+
 ## M2 — Leads UI
 
 **Branch:** `feat/leads-ui`
