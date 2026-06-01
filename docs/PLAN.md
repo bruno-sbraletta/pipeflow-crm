@@ -14,11 +14,11 @@
 
 ### Entregas
 
-- [ ] `npx create-next-app@latest . --typescript --tailwind --app --src-dir false --eslint`
-- [ ] `npx shadcn@latest init` (tema neutral, CSS variables)
-- [ ] Instalar dependências: `@dnd-kit/core @dnd-kit/sortable @dnd-kit/utilities recharts @supabase/supabase-js @supabase/ssr resend stripe`
-- [ ] Instalar devDeps: `@types/node`
-- [ ] Criar estrutura de pastas completa:
+- [x] `npx create-next-app@latest . --typescript --tailwind --app --src-dir false --eslint`
+- [x] `npx shadcn@latest init` (tema neutral, CSS variables)
+- [x] Instalar dependências: `@dnd-kit/core @dnd-kit/sortable @dnd-kit/utilities recharts @supabase/supabase-js @supabase/ssr resend stripe`
+- [x] Instalar devDeps: `@types/node`
+- [x] Criar estrutura de pastas completa:
   ```
   app/(auth)/login  app/(auth)/register  app/(auth)/invite/[token]
   app/(app)/dashboard  app/(app)/leads/[id]  app/(app)/pipeline  app/(app)/settings
@@ -30,7 +30,7 @@
   supabase/migrations  supabase/functions/stripe-webhook
   docs
   ```
-- [ ] Criar `.env.local` com todas as variáveis (valores placeholder):
+- [x] Criar `.env.local` com todas as variáveis (valores placeholder):
   ```
   NEXT_PUBLIC_SUPABASE_URL=
   NEXT_PUBLIC_SUPABASE_ANON_KEY=
@@ -41,10 +41,10 @@
   RESEND_API_KEY=
   NEXT_PUBLIC_APP_URL=http://localhost:3000
   ```
-- [ ] Configurar `tailwind.config.ts`: adicionar Inter via `next/font`, paleta `blue-600` como primary
-- [ ] `types/index.ts` — definir tipos globais: `Lead`, `Deal`, `Activity`, `Workspace`, `WorkspaceMember`, `LeadStatus`, `DealStage`, `ActivityType`
-- [ ] `lib/mock-data.ts` — dados mock para leads, deals, activities, workspaces
-- [ ] Inicializar git: `git init`, `.gitignore` (incluir `.env.local`), commit inicial
+- [x] Configurar `tailwind.config.ts`: adicionar Inter via `next/font`, paleta `blue-600` como primary
+- [x] `types/index.ts` — definir tipos globais: `Lead`, `Deal`, `Activity`, `Workspace`, `WorkspaceMember`, `LeadStatus`, `DealStage`, `ActivityType`
+- [x] `lib/mock-data.ts` — dados mock para leads, deals, activities, workspaces
+- [x] Inicializar git: `git init`, `.gitignore` (incluir `.env.local`), commit inicial
 
 **Commit final:** `chore: bootstrap Next.js 14 project with full stack configuration`
 
